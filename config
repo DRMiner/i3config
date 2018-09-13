@@ -25,7 +25,7 @@ exec --no-startup-id nm-applet
 
 # pokreni virtual box
 bindcode $mod+132 exec virtualbox
-# pokreni nautilus
+# pokreni krusader 
 bindcode 132 exec krusader 
 #pokreni vlc
 bindcode 97 exec vlc
