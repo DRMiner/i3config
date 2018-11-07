@@ -22,7 +22,7 @@ bindsym Control+Delete exec i3lock -t -i /home/r/Documents/SDcard/greenie.png
 exec --no-startup-id nm-applet
 
 # pokreni virtual box
-bindcode $mod+132 exec virtualbox
+#bindcode $mod+132 exec virtualbox
 # pokreni krusader 
 bindcode 132 exec krusader 
 #pokreni keepass
@@ -31,8 +31,10 @@ bindcode 97 exec --no-startup-id i3-msg workspace '$ws5';exec keepassx2;workspac
 bindcode $mod+97 exec gajim 
 #set desktop
 
-exec --no-startup-id feh --bg-scale /home/r/Documents/SDcard/greenie.png
-
+exec --no-startup-id feh --bg-scale /home/r/Documents/greenie.png
+#set natural scroll and tap click
+exec xinput set-prop 16 296 1
+exec xinput set-prop 16 278 1
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -132,16 +134,16 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 ". "
-set $ws2 ".."
-set $ws3 "..."
-set $ws4 "_"
-set $ws5 "_."
-set $ws6 "_.."
-set $ws7 "_..."
-set $ws8 "_ _"
-set $ws9 "_ _."
-set $ws10 "_ _.."
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
